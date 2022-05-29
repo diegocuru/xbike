@@ -3,28 +3,96 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Abel-Regular.ttf">
+            <string>Abel-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Current Ride-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController title="Current Ride" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController title="Current Ride" id="Y6W-OH-hqX" customClass="CurrentRideViewController" customModule="XBike" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfr-9D-3zQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxt-5W-yGQ">
+                                        <rect key="frame" x="354" y="39" width="42" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="Ijj-D3-Ok8"/>
+                                            <constraint firstAttribute="height" constant="42" id="pfy-FU-Gzj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="plus" catalog="system" symbolScale="large" renderingMode="template"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default" weight="bold"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJe-Wr-lNc">
+                                        <rect key="frame" x="103.5" y="46.5" width="207" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="Grb-JT-Qzv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Abel-Regular" family="Abel" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Orange"/>
+                                <constraints>
+                                    <constraint firstItem="VJe-Wr-lNc" firstAttribute="centerY" secondItem="hxt-5W-yGQ" secondAttribute="centerY" id="8BS-DC-vac"/>
+                                    <constraint firstItem="VJe-Wr-lNc" firstAttribute="width" secondItem="Qfr-9D-3zQ" secondAttribute="width" multiplier="0.5" id="PvS-is-vMC"/>
+                                    <constraint firstAttribute="height" constant="90" id="Wsv-ds-Bhq"/>
+                                    <constraint firstItem="VJe-Wr-lNc" firstAttribute="centerX" secondItem="Qfr-9D-3zQ" secondAttribute="centerX" id="X47-39-c0U"/>
+                                    <constraint firstAttribute="bottom" secondItem="hxt-5W-yGQ" secondAttribute="bottom" constant="9" id="dpI-hM-cGb"/>
+                                    <constraint firstItem="hxt-5W-yGQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VJe-Wr-lNc" secondAttribute="trailing" constant="8" id="pew-Ko-fH1"/>
+                                    <constraint firstAttribute="trailing" secondItem="hxt-5W-yGQ" secondAttribute="trailing" constant="18" id="tpR-OW-ZEI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1p-lw-JFA" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qfr-9D-3zQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Dvm-Ke-QnE"/>
+                            <constraint firstItem="Qfr-9D-3zQ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="GMU-kd-dre"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Qfr-9D-3zQ" secondAttribute="trailing" id="IpR-cU-Q4C"/>
+                            <constraint firstItem="t1p-lw-JFA" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="LPO-fk-5JA"/>
+                            <constraint firstItem="t1p-lw-JFA" firstAttribute="top" secondItem="Qfr-9D-3zQ" secondAttribute="bottom" id="OQP-6X-xq3"/>
+                            <constraint firstItem="t1p-lw-JFA" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="VJU-Ul-wcW"/>
+                            <constraint firstItem="t1p-lw-JFA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rdL-Dj-Rzf"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wK5-BZ-sE3"/>
+                    <connections>
+                        <outlet property="googleMapView" destination="t1p-lw-JFA" id="BqA-K2-oN6"/>
+                        <outlet property="titleLabel" destination="VJe-Wr-lNc" id="Ifv-bQ-UjW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="139"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="Orange">
+            <color red="1" green="0.55686274509803924" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

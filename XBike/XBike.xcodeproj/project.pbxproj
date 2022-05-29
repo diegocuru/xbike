@@ -29,6 +29,7 @@
 		DCFC3332284321F800688DE5 /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCFC3331284321F800688DE5 /* Abel-Regular.ttf */; };
 		DCFC33382843307E00688DE5 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC33372843307E00688DE5 /* LocalizedString.swift */; };
 		DCFC333A284337F800688DE5 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC3339284337F700688DE5 /* AppSettings.swift */; };
+		DCFC333C284342EF00688DE5 /* CurrentRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC333B284342EF00688DE5 /* CurrentRideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		DCFC3331284321F800688DE5 /* Abel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abel-Regular.ttf"; sourceTree = "<group>"; };
 		DCFC33372843307E00688DE5 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		DCFC3339284337F700688DE5 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		DCFC333B284342EF00688DE5 /* CurrentRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRideViewController.swift; sourceTree = "<group>"; };
 		EEC0E41F43FEFEEF0D25E760 /* Pods_XBikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 				DC0005E62841ACCB0060721D /* SceneDelegate.swift */,
 				DCFC332B2841EB4000688DE5 /* Onboarding */,
 				DCFC332C2841EFD600688DE5 /* MainTabBarViewController.swift */,
+				DCFC333B284342EF00688DE5 /* CurrentRideViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFC333C284342EF00688DE5 /* CurrentRideViewController.swift in Sources */,
 				DC0005EF2841ACCB0060721D /* XBike.xcdatamodeld in Sources */,
 				DC0005E52841ACCB0060721D /* AppDelegate.swift in Sources */,
 				DCFC33382843307E00688DE5 /* LocalizedString.swift in Sources */,

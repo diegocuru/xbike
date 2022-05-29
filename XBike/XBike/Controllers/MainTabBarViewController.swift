@@ -12,6 +12,7 @@ class MainTabBarViewController: UITabBarController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -25,6 +26,12 @@ class MainTabBarViewController: UITabBarController {
 
 // MARK: - Private Methods
 private extension MainTabBarViewController {
+    
+    func setupUI() {
+        tabBar.items?.forEach { item in
+            item.image = UIImage(systemName: "square.fill")
+        }
+    }
     
     func presentOnboarding() {
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)

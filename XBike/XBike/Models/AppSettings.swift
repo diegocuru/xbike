@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import GoogleMaps
 
 enum AppSettings {
     
@@ -32,5 +33,9 @@ extension AppSettings {
     
     static func set(onboardingShown: Bool) {
         UserDefaults.standard.set(onboardingShown, forKey: Key.onboardingShown)
+    }
+    
+    static func configureGoogleMaps() {
+        GMSServices.provideAPIKey("AIzaSyCNGO5vKW06s3iAyVNp-AycQ2xy_r8R6C8")
     }
 }

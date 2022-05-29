@@ -14,4 +14,8 @@ enum LocalizedString {
         static let stepTwo = NSLocalizedString("Track your time and distance", comment: "")
         static let stepThree = NSLocalizedString("See your progress and challenge yourself!", comment: "")
     }
+    
+    enum CurrentRide {
+        static let title = NSLocalizedString("Current Ride", comment: "")
+    }
 }
