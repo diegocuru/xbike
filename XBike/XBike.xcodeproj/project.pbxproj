@@ -20,6 +20,15 @@
 		DC00060B2841ACCE0060721D /* XBikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC00060A2841ACCE0060721D /* XBikeUITestsLaunchTests.swift */; };
 		DC0006182841AE900060721D /* CurrentRide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0006172841AE900060721D /* CurrentRide.storyboard */; };
 		DC00061A2841AEAE0060721D /* MyProgress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0006192841AEAE0060721D /* MyProgress.storyboard */; };
+		DCFC33212841E67E00688DE5 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFC33202841E67E00688DE5 /* Onboarding.storyboard */; };
+		DCFC33232841E6FB00688DE5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC33222841E6FB00688DE5 /* OnboardingViewController.swift */; };
+		DCFC33252841E8C100688DE5 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC33242841E8C100688DE5 /* Onboarding.swift */; };
+		DCFC33292841EB2B00688DE5 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC33272841EB2B00688DE5 /* OnboardingCollectionViewCell.swift */; };
+		DCFC332A2841EB2B00688DE5 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCFC33282841EB2B00688DE5 /* OnboardingCollectionViewCell.xib */; };
+		DCFC332D2841EFD600688DE5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC332C2841EFD600688DE5 /* MainTabBarViewController.swift */; };
+		DCFC3332284321F800688DE5 /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCFC3331284321F800688DE5 /* Abel-Regular.ttf */; };
+		DCFC33382843307E00688DE5 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC33372843307E00688DE5 /* LocalizedString.swift */; };
+		DCFC333A284337F800688DE5 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC3339284337F700688DE5 /* AppSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +71,15 @@
 		DC00060A2841ACCE0060721D /* XBikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DC0006172841AE900060721D /* CurrentRide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrentRide.storyboard; sourceTree = "<group>"; };
 		DC0006192841AEAE0060721D /* MyProgress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProgress.storyboard; sourceTree = "<group>"; };
+		DCFC33202841E67E00688DE5 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		DCFC33222841E6FB00688DE5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		DCFC33242841E8C100688DE5 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		DCFC33272841EB2B00688DE5 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		DCFC33282841EB2B00688DE5 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		DCFC332C2841EFD600688DE5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		DCFC3331284321F800688DE5 /* Abel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abel-Regular.ttf"; sourceTree = "<group>"; };
+		DCFC33372843307E00688DE5 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		DCFC3339284337F700688DE5 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		EEC0E41F43FEFEEF0D25E760 /* Pods_XBikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,6 +149,8 @@
 				DCFC331F2841DFB000688DE5 /* Models */,
 				DCFC331E2841DF6800688DE5 /* Views */,
 				DCFC331D2841DF5100688DE5 /* Controllers */,
+				DCFC33342843301C00688DE5 /* Helpers */,
+				DCFC332F284321D300688DE5 /* Resources */,
 				DC0005F02841ACCE0060721D /* Assets.xcassets */,
 				DC0005F52841ACCE0060721D /* Info.plist */,
 				DC0005ED2841ACCB0060721D /* XBike.xcdatamodeld */,
@@ -159,6 +179,8 @@
 			children = (
 				DC0005E42841ACCB0060721D /* AppDelegate.swift */,
 				DC0005E62841ACCB0060721D /* SceneDelegate.swift */,
+				DCFC332B2841EB4000688DE5 /* Onboarding */,
+				DCFC332C2841EFD600688DE5 /* MainTabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,6 +192,7 @@
 				DC0005EA2841ACCB0060721D /* MainTabBar.storyboard */,
 				DC0006172841AE900060721D /* CurrentRide.storyboard */,
 				DC0006192841AEAE0060721D /* MyProgress.storyboard */,
+				DCFC33262841EADC00688DE5 /* Onboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,8 +200,52 @@
 		DCFC331F2841DFB000688DE5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DCFC33242841E8C100688DE5 /* Onboarding.swift */,
+				DCFC3339284337F700688DE5 /* AppSettings.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DCFC33262841EADC00688DE5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DCFC33202841E67E00688DE5 /* Onboarding.storyboard */,
+				DCFC33282841EB2B00688DE5 /* OnboardingCollectionViewCell.xib */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DCFC332B2841EB4000688DE5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DCFC33222841E6FB00688DE5 /* OnboardingViewController.swift */,
+				DCFC33272841EB2B00688DE5 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DCFC332F284321D300688DE5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCFC3330284321DE00688DE5 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCFC3330284321DE00688DE5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DCFC3331284321F800688DE5 /* Abel-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DCFC33342843301C00688DE5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DCFC33372843307E00688DE5 /* LocalizedString.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DEBD519B6CB4E6C04439353A /* Pods */ = {
@@ -307,8 +374,11 @@
 				DC0006182841AE900060721D /* CurrentRide.storyboard in Resources */,
 				DC0005F42841ACCE0060721D /* LaunchScreen.storyboard in Resources */,
 				DC00061A2841AEAE0060721D /* MyProgress.storyboard in Resources */,
+				DCFC33212841E67E00688DE5 /* Onboarding.storyboard in Resources */,
+				DCFC332A2841EB2B00688DE5 /* OnboardingCollectionViewCell.xib in Resources */,
 				DC0005F12841ACCE0060721D /* Assets.xcassets in Resources */,
 				DC0005EC2841ACCB0060721D /* MainTabBar.storyboard in Resources */,
+				DCFC3332284321F800688DE5 /* Abel-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +525,13 @@
 			files = (
 				DC0005EF2841ACCB0060721D /* XBike.xcdatamodeld in Sources */,
 				DC0005E52841ACCB0060721D /* AppDelegate.swift in Sources */,
+				DCFC33382843307E00688DE5 /* LocalizedString.swift in Sources */,
+				DCFC33252841E8C100688DE5 /* Onboarding.swift in Sources */,
+				DCFC332D2841EFD600688DE5 /* MainTabBarViewController.swift in Sources */,
+				DCFC333A284337F800688DE5 /* AppSettings.swift in Sources */,
 				DC0005E72841ACCB0060721D /* SceneDelegate.swift in Sources */,
+				DCFC33232841E6FB00688DE5 /* OnboardingViewController.swift in Sources */,
+				DCFC33292841EB2B00688DE5 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +713,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = MainTabBar;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -666,6 +743,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = MainTabBar;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
